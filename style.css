@@ -295,10 +295,6 @@ body .tag {
   /* border: 1px solid var(--glass-border);
   box-shadow: var(--card-shadow); */
   height: 20rem;
-<<<<<<< HEAD
-=======
-  transition: transform 0.3s, box-shadow 0.3s;
->>>>>>> 1f64fb7bf0bb75a26f1e1a7d7c780fef0fbc576b
   position: relative;
   overflow: hidden;
   display: flex;
@@ -362,21 +358,6 @@ body .tag {
   flex-direction: column;
   position: relative;
   gap: 1rem;
-<<<<<<< HEAD
-=======
-}
-
-.new_content {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: column wrap;
-  border-radius: 25px;
-  background-color: #000000;
-  align-items: center;
-  /* border-radius: 16px;
-  border: 1px solid var(--glass-border); */
->>>>>>> 1f64fb7bf0bb75a26f1e1a7d7c780fef0fbc576b
 }
 
 .new_content {
@@ -445,11 +426,7 @@ body .tag {
 .card-footer {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
   align-items: stretch;
-=======
-  align-items: baseline;
->>>>>>> 1f64fb7bf0bb75a26f1e1a7d7c780fef0fbc576b
   margin-top: auto;
   padding-top: 0.5rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
@@ -632,11 +609,7 @@ footer p {
 :root {
   --primary: #8a00ff;
   --secondary: #df00ff;
-<<<<<<< HEAD
   --accent: #c919c5;
-=======
-  --accent: #a760ff;
->>>>>>> 1f64fb7bf0bb75a26f1e1a7d7c780fef0fbc576b
   --dark: #1c1c1c;
   --darker: #121212;
   --light: #ffffff;
