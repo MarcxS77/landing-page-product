@@ -295,7 +295,6 @@ body .tag {
   /* border: 1px solid var(--glass-border);
   box-shadow: var(--card-shadow); */
   height: 20rem;
-  transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -362,8 +361,6 @@ body .tag {
 }
 
 .new_content {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-flow: column wrap;
   border-radius: 25px;
@@ -372,6 +369,12 @@ body .tag {
   /* border-radius: 16px;
   border: 1px solid var(--glass-border); */
 }
+
+.new_content img {
+  padding: 10% 0 10% 0;
+  width: 85%;
+}
+
 
 .card-serial {
   /* position: absolute; */
@@ -396,6 +399,11 @@ body .tag {
   border-radius: 4px;
 }
 
+.welcome{
+  padding-bottom: 1%;
+  height: 8.5rem;
+}
+
 .card-title {
   font-family: var(--font-primary);
   font-size: 1.6rem;
@@ -418,7 +426,7 @@ body .tag {
 .card-footer {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: stretch;
   margin-top: auto;
   padding-top: 0.5rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
@@ -428,6 +436,7 @@ body .tag {
   font-size: 1.25rem;
   opacity: 0.7;
 }
+
 
 .card-code {
   font-family: var(--font-primary);
@@ -600,7 +609,7 @@ footer p {
 :root {
   --primary: #8a00ff;
   --secondary: #df00ff;
-  --accent: #a760ff;
+  --accent: #c919c5;
   --dark: #1c1c1c;
   --darker: #121212;
   --light: #ffffff;
