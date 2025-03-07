@@ -399,10 +399,6 @@ body .tag {
   border-radius: 4px;
 }
 
-.welcome{
-  padding-bottom: 1%;
-  height: 8.5rem;
-}
 
 .card-title {
   font-family: var(--font-primary);
@@ -461,6 +457,28 @@ footer p {
 }
 
 /* Responsive */
+
+@media(max-width: 1600px) {
+  .cards{
+    padding: 1%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+
+  .new_cards{
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .welcome{
+    padding-bottom: 0;
+    /* height */
+  }
+}
+
 @media (max-width: 1200px) {
   body {
     background-color: #631566;
@@ -472,7 +490,6 @@ footer p {
     justify-content: center;
     flex-flow: column wrap;
     width: 100vh;
-    /* background-color: red; */
   }
 
   .header {
@@ -482,15 +499,14 @@ footer p {
     gap: 50px;
     justify-content: center;
     text-align: center;
-    font-size: 1rem; /* Ajuste conforme necessário */
+    font-size: 1rem; 
   }
 
   .header-content {
-    /* background-color: #ffffff; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center; /* Adicionado para alinhar verticalmente */
+    align-items: center; 
     width: 80vw;
   }
 
@@ -499,10 +515,9 @@ footer p {
     padding: 10%;
     text-align: left;
     flex-direction: column;
-    display: flex; /* Mantendo flexível */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(55, 0, 255); */
   }
 
   .tag {
@@ -834,6 +849,8 @@ body {
 
 /* Restante do código permanece similar, com pequenas otimizações */
 
+
+
 @media (max-width: 1200px) {
   body {
     padding: 0;
@@ -882,7 +899,7 @@ body {
 
   .btn_new {
     display: flex;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .header-image {
@@ -913,4 +930,88 @@ body {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+/* Estilos para o carrossel de feedbacks */
+.carousel-container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--primary);
+  
+}
+
+.carousel-row {
+  display: flex;
+  position: relative;
+  width: max-content;
+  
+}
+
+.row-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1%;
+}
+
+.feedback-card {
+  flex: 0 0 300px;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  margin-right: 10px;
+}
+
+/* Glassmorfismo */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Background simples */
+.solid {
+  /* background: var(--accent); */
+}
+
+.feedback-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--light);
+}
+
+.feedback-text {
+  font-size: 14px;
+  color: var(--light);
+  line-height: 1.5;
+}
+
+.feedback-author {
+  margin-top: auto;
+  font-style: italic;
+  color: var(--light);
+}
+
+/* Animações */
+@keyframes moveLeft {
+  from { transform: translateX(0); }
+    to { transform: translateX(calc(-300px * 3 - 60px)); } /* 3 cards de 300px + gaps de 20px */
+}
+
+@keyframes moveRight {
+  from { transform: translateX(calc(-300px * 3 - 60px)); } /* Mesmo valor que acima */
+    to { transform: translateX(0); }
+}
+
+.move-left {
+  animation: moveLeft 20s linear infinite;
+  
+}
+
+.move-right {
+  animation: moveRight 20s linear infinite;
 }
