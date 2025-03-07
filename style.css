@@ -79,7 +79,7 @@ body {
 
 
 .header-content-cont {
-  background-color: black;
+  /* background-color: black; */
   text-align: start;
 }
 
@@ -90,7 +90,7 @@ body {
   flex-flow: column wrap;
   text-align: center;
   /* Define um limite para o texto */
-  background-color: red;
+  /* background-color: red; */
 }
 
 /* Define a área da imagem */
