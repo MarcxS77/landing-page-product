@@ -483,21 +483,28 @@ footer p {
       #881875 60%,
       #69115b 100%
     );
-    width: 100%;
+    width: 100vw; /* Use viewport width */
+    overflow-x: hidden; /* Impede rolagem horizontal */
   }
 
   .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 
   .header-content {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 5% 0 0%;
     gap: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajuste para largura total */
+    position: relative; /* Remover posição absoluta */
   }
 
   .header-image {
@@ -506,11 +513,17 @@ footer p {
 
   .container {
     display: flex;
+    justify-content: center;
     flex-flow: column;
+    width: 100%;
+    overflow: hidden; /* Impede rolagem horizontal */
   }
 
   .header-content-cont {
+    display: flex;
+    flex-flow: column;
     height: 35rem;
+    width: 95%; /* Use 100% da largura */
     justify-content: center;
     align-items: center;
   }
@@ -520,10 +533,15 @@ footer p {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .title {
-    font-size: 48px;
+    font-size: 42px;
+  }
+
+  .tag{
+    /* width: 70%; */
   }
 
   .section-title {
@@ -531,15 +549,17 @@ footer p {
     align-items: center;
     flex-flow: column wrap;
     justify-content: center;
-    width: 50%;
+    width: 100%; /* Ajustado para 100% */
+    padding: 0 15px; /* Adicionado padding lateral */
   }
 
   .cards {
     display: flex;
     gap: 25px;
-    width: 80%;
+    width: 90%; /* Ajustado para 90% */
     height: auto;
     flex-direction: column;
+    padding: 15px; /* Padding consistente */
   }
 
   .btn_new {
@@ -548,6 +568,7 @@ footer p {
 
   .row-container {
     height: 25%;
+    width: 100%;
   }
 }
 
@@ -555,13 +576,27 @@ footer p {
   body {
     display: flex;
     flex-flow: column;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .header-image {
     display: none;
   }
+
   .container {
     display: flex;
     flex-flow: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-content {
+    max-width: 100%;
+    padding-right: 0; /* Remover padding-right grande */
+  }
+
+  .card {
+    width: 100%;
   }
 }
