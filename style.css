@@ -489,12 +489,15 @@ footer p {
   .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center ;
     /* background-color: red; */
   }
 
   .header-content {
     display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
   }
 
   .header-image {
@@ -502,8 +505,16 @@ footer p {
   }
 
   .container {
+
     display: flex;
     flex-flow: column;
+    
+    background-color: red;
+  }
+
+  .header-content-cont{
+    height: 35rem;
+    
   }
 
   .main-content {
